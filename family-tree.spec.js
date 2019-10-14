@@ -1,6 +1,6 @@
 const FamilyTree = require('./family-tree');
 // Comment above, and uncomment below for proven solution.
-// const FamilyTree = require('./solution');
+//const FamilyTree = require('./solution');
 
 describe('Family Tree', () => {
   describe('Initializes', () => {
@@ -12,14 +12,14 @@ describe('Family Tree', () => {
 
     test('If not given a value, the family tree errors.', () => {
       expect(() => {
-        // @ts-ignore
+         //@ts-ignore
         return new FamilyTree();
       }).toThrow();
     });
 
     test('If given anything thats not a string, the family tree errors.', () => {
       expect(() => {
-        // @ts-ignore
+         //@ts-ignore
         return new FamilyTree(7);
       }).toThrow();
     });
@@ -151,6 +151,7 @@ describe('Family Tree', () => {
       amysFamily.insert('Vivian');
 
       const log = szwajkowskis.log();
+      console.log(szwajkowskis.log())
 
       expect(
         log.indexOf(
